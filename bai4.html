@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+<script>
+    function caculationSum(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (i === j) {
+                    sum += arr[i][j];
+                }
+            }
+        }
+        return sum;
+    }
+
+    let arr1 = [[1, 1, 1],
+        [2, 2, 2],
+        [3, 3, 3]];
+    let sum1 = caculationSum(arr1);
+    alert(sum1);
+</script>
+</body>
+</html>

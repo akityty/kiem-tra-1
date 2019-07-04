@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+    function caculationAge(yearOfBirth) {
+        let date = new Date();
+        let age = date.getFullYear()-yearOfBirth;
+        return age;
+    }
+   let yearOfBirth1 =  prompt("nhập năm sinh");
+    let age1 = caculationAge(yearOfBirth1);
+    alert("năm nay bạn "+age1+" tuổi");
+</script>
+</body>
+</html>

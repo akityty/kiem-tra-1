@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1</title>
+</head>
+<body>
+Enter a number: <input id="number1" type="number"/>
+<button type="button" onclick="show()">Show</button>
+<p id="display"></p>
+<script>
+    function testPrime(x) {
+        for (let i = 2; i <= Math.sqrt(x); i++) {
+            if (x % i == 0) {
+                return false;
+            }
+        }
+        return true
+    }
+
+        function show() {
+            document.getElementById("display").innerText = "";
+            let valueInput = parseInt(document.getElementById("number1").value);
+            for (let j = 2; j < valueInput; j++) {
+                let count1 = testPrime(j);
+                if (count1) {
+                    document.getElementById("display").innerText += j + " \n";
+                }
+            }
+        }
+</script>
+</body>
+</html>
