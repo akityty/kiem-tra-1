@@ -7,12 +7,14 @@
 <body>
 <script>
     function caculationAge(yearOfBirth) {
-        let date = new Date();
-        let age = date.getFullYear()-yearOfBirth;
+        let currentYear = new Date().getFullYear();
+        let age = currentYear-yearOfBirth;
         return age;
     }
    let yearOfBirth1 =  prompt("nhập năm sinh");
     let age1 = caculationAge(yearOfBirth1);
+    if(age1 < 0)
+       alert(" Năm sinh không hợp lệ!");
     alert("năm nay bạn "+age1+" tuổi");
 </script>
 </body>
